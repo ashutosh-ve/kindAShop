@@ -10,7 +10,7 @@ export const Product = ({product}) => {
       <Card className='my-3 p-3 rounded'>
         <Link to={`/product/${product._id}`}><Card.Img src={product.image}/></Link>
           <CardBody>
-          <Link to={`/product.${product._id}`}>
+          <Link to={`/product/${product._id}`}>
             <CardTitle as='div' className='product-title'>
               {product.name}
             </CardTitle>
